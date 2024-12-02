@@ -110,6 +110,7 @@ body {
   transform: scale(0.95);
   box-shadow: none;
 }
+
 /* 
 
 
@@ -689,9 +690,6 @@ body {
 
   #cs-navigation .cs-button-solid:hover:before {
     width: 100%;
-  }
-
-  #cs-navigation .cs-nav-button {
   }
 }
 
