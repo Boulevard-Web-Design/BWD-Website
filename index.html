@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boulevard Web Design</title>
+    <link
+      rel="icon"
+      href="assets/Boulevard Web Design Favicon.png"
+      type="image/x-icon" />
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="styles/global-styles.css" />
+    <link rel="stylesheet" href="styles/home-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ee48449e08.js"
+      crossorigin="anonymous"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="" class="cs-logo" aria-label="back to home">
+          <img
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async" />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> About </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Pricing </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-button-solid cs-nav-button"> Contact </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+    <section id="hero-998">
+      <!-- Background Layer -->
+      <div class="hero-background">
+        <picture class="cs-background">
+          <!-- <source
+          media="(max-width: 600px)"
+          srcset="/assets/Hero-Backgrounds/hero-480w.jpg" />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/Hero-Backgrounds/hero-768w.jpg" /> -->
+          <img
+            decoding="async"
+            src="/assets/Hero-Backgrounds/hero-1920w.jpg"
+            alt="Boulevard Web Design Hero Background Image"
+            width="1920"
+            height="1000"
+            loading="lazy" />
+        </picture>
+      </div>
+
+      <!-- Content Layer -->
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">
+            <span class="green-pacifico flicker">Boulevard</span>
+            <span> Web Design </span>
+          </span>
+          <p class="cs-text">Tailored Websites That Drive Growth.</p>
+          <a href="" class="cs-button-solid">Contact Us Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Content                     -->
+    <!-- ============================================ -->
+
+    <section id="content-1450" class="bg-color">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">What We Do</span>
+          <h2 class="cs-title">
+            We deliver professional, custom websites that elevate small
+            businesses with the quality web presence they deserve.
+          </h2>
+          <p class="cs-text">
+            Boulevard Web Design was created with one goal in mind: to help
+            small businesses thrive online. We know firsthand that having a
+            professional website can be a game-changer, and we’re passionate
+            about creating sites that deliver value.
+          </p>
+          <a href="" class="cs-button-solid">Read About Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Services                   -->
+    <!-- ============================================ -->
+
+    <section id="services-1191" class="bg-color">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">What We Offer</span>
+          <h2 class="cs-title">Websites Catered to Small Businesses</h2>
+          <p class="cs-text">
+            Boulevard Web Design specializes in creating tailored, high-quality
+            websites specifically for small businesses, ensuring each site is
+            visually appealing and user-friendly. Our affordable web design
+            services enhance your online presence, driving organic traffic and
+            helping your small business thrive in a competitive digital
+            landscape.
+          </p>
+        </div>
+        <!--Placed in a wrapper div so we can position the car absolutely inside the container to be centered in the middle of the list on desktop-->
+        <div class="cs-wrapper">
+          <!--Car-->
+          <picture class="cs-image">
+            <!--Mobile Image-->
+            <!-- <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png
+              " /> -->
+            <!--Tablet and above Image-->
+            <!-- <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/nice-car.png
+              " /> -->
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/Boulevard-Web-Design-Services-Undraw.svg"
+              alt="car"
+              width="510"
+              height="193"
+              aria-hidden="true" />
+          </picture>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-laptop-code cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Custom Website Design</h3>
+                <p class="cs-item-text">
+                  Boulevard Web Design hand codes high-performance, user-focused
+                  websites that help your business stand out online.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-copyright cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Logo Design</h3>
+                <p class="cs-item-text">
+                  Our professional logo designer specializes in creating custom,
+                  memorable logos that reflect your brand’s identity and make a
+                  lasting impression.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-magnifying-glass cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">SEO Services</h3>
+                <p class="cs-item-text">
+                  We optimize your website’s content, keywords, and structure to
+                  boost search visibility and attract organic traffic from day
+                  one.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-globe cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Domain Registration and Hosting Setup</h3>
+                <p class="cs-item-text">
+                  Need a domain or hosting? We’ll secure everything for a live,
+                  secure website ready to grow with your business.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-screwdriver-wrench cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Maintenence and Support</h3>
+                <p class="cs-item-text">
+                  Once your website is live, our support doesn’t stop. We offer
+                  ongoing maintenance to ensure your site is secure, up-to-date,
+                  and running smoothly.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <picture class="cs-picture">
+                <i
+                  class="fa-solid fa-headset cs-icon"
+                  alt="icon"
+                  aria-hidden="true"></i>
+              </picture>
+              <!-- Text Grouped For Flexbox-->
+              <div class="cs-text-group">
+                <h3 class="cs-h3">Best Customer Service</h3>
+                <p class="cs-item-text">
+                  Call, text, or email at anytime and you will get directly in
+                  touch with the owner and developer.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a href="" class="cs-button-solid">Schedule A Chat</a>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Why Choose Us               -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-296" class="bg-color">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Why Choose Us</span>
+          <h2 class="cs-title">
+            "94% of all mobile and tablet search traffic comes from Google."
+          </h2>
+          <p class="cs-text">
+            With a tailored website from Boulevard Web Design, you can tap into
+            the 94% of mobile and tablet search traffic on Google. Partnering
+            with us is the smart choice to stand out and drive real results.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <a class="cs-link" href="">
+              <span class="cs-icon"> <i class="fa-solid fa-mobile"></i></span>
+              <h3 class="cs-h3">Mobile First</h3>
+              <p class="cs-item-text">
+                Our mobile-first designs ensure seamless performance and
+                accessibility, providing an exceptional user experience on any
+                device.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/Why-Choose-Us-Images/mobile-image.jpg"
+                alt="library"
+                width="413"
+                height="266" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <span class="cs-icon"><i class="fa-brands fa-google"></i></span>
+              <h3 class="cs-h3">Google Oriented</h3>
+              <p class="cs-item-text">
+                Our websites are optimized to score 100s on Google PageSpeed
+                Insights, ensuring better rankings on Google.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/Why-Choose-Us-Images/google-ipad-photo.jpg"
+                alt="library"
+                width="413"
+                height="266" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a href="" class="cs-link">
+              <span class="cs-icon"><i class="fa-solid fa-code"></i></span>
+              <h3 class="cs-h3">Hand Coded</h3>
+              <p class="cs-item-text">
+                Everything is hand-coded for essential functionality without
+                complexity, ensuring fast load times and easy updates as your
+                business grows.
+              </p>
+            </a>
+            <picture class="cs-image" aria-hidden="true">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/Why-Choose-Us-Images/coding-image.jpg"
+                alt="library"
+                width="413"
+                height="266" />
+            </picture>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="">
+              <span class="cs-icon"><i class="fa-solid fa-shop"></i></span>
+              <h3 class="cs-h3">One Stop Shop</h3>
+              <p class="cs-item-text">
+                We create custom websites with ongoing maintenance and offer
+                expert logo design through our in-house designer.
+              </p>
+            </a>
+            <picture class="cs-image">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="assets/Why-Choose-Us-Images/open-sign-image.jpg"
+                alt="library"
+                width="413"
+                height="266"
+                aria-hidden="true" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps" class="bg-color">
+      <div class="cs-container">
+        <div class="cs-image-group">
+          <picture class="cs-picture">
+            <!--Mobile Image-->
+            <!-- <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
+              " /> -->
+            <!--Tablet and above Image-->
+            <!-- <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
+              " /> -->
+            <img
+              loading="lazy"
+              decoding="async"
+              src="assets/Steps-Images/Building-Website-Image.jpg"
+              alt="dermatologist"
+              width="324"
+              height="467" />
+          </picture>
+        </div>
+        <div class="cs-wrapper">
+          <div class="cs-content">
+            <span class="cs-topper">How to get started</span>
+            <h2 class="cs-title">Building Your Online Boulevard</h2>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-number">01</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Consultation</h3>
+                <p class="cs-item-text">
+                  First step would be to hop on a phone or zoom call to see what
+                  your company would be looking for and how we can assist your
+                  company with these issues.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-number">02</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Design</h3>
+                <p class="cs-item-text">
+                  After discussing a plan for the website, we would reconvene
+                  within a 2-3 business days with a mockup of the website to
+                  make sure we're on the same page.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-number">03</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Development</h3>
+                <p class="cs-item-text">
+                  Once the mockup is agreed upon, development will be done
+                  within 3-4 business days.
+                </p>
+              </div>
+            </li>
+            <li class="cs-item">
+              <span class="cs-number">04</span>
+              <div class="cs-flex">
+                <h3 class="cs-h3">Deployment</h3>
+                <p class="cs-item-text">
+                  After thoroughly testing and checking functionality, we will
+                  deploy the website!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Pricing                     -->
+    <!-- ============================================ -->
+
+    <section id="pricing-1384" class="bg-color">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Pricing</span>
+          <h2 class="cs-title">
+            Flexible Pricing Plans for Your Tailored Needs
+          </h2>
+          <p class="cs-text">
+            In the new era of technology we look in the future with certainty
+            and for any post types, or just they are so much great of all to a
+            program.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <div class="cs-flex">
+              <span class="cs-package">Lump Sum</span>
+              <span class="cs-price"> $3000 </span>
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <text>Mobile Responsive</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Custom Design</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Custom Domain</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>$25/mo Hosting</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>$200 fee Per Page After 5</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li cs-disabled">
+                <text>Unlimited Edits</text><i class="fa-solid fa-ban"></i>
+              </li>
+              <li class="cs-li cs-disabled">
+                <text>Lifetime Updates</text><i class="fa-solid fa-ban"></i>
+              </li>
+            </ul>
+            <a href="" class="cs-button-transparent">Get Started</a>
+          </li>
+          <li class="cs-item cs-popular">
+            <div class="cs-flex">
+              <span class="cs-package">Monthly</span>
+              <span class="cs-price">
+                $175
+                <span class="cs-duration">/Month</span>
+              </span>
+
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <text>Mobile Responsive</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Custom Design</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Custom Domain</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Hosting Included</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>$200 fee Per Page After 5</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Unlimited Edits</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Lifetime Updates</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+            </ul>
+            <a href="" class="cs-button-transparent">Get Started</a>
+          </li>
+          <li class="cs-item">
+            <div class="cs-flex">
+              <span class="cs-package">Branding Pack</span>
+              <span class="cs-price"> $4200</span>
+              <!-- Use this code when I want to mark a specific one! -->
+              <!-- <div class="cs-tag">
+                <img
+                  class="cs-icon"
+                  aria-hidden="true"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/fire.svg"
+                  decoding="async"
+                  alt="fire"
+                  width="16"
+                  height="16"
+                  loading="true" />
+                Hot Deal
+              </div> -->
+            </div>
+            <ul class="cs-ul">
+              <li class="cs-li">
+                <span></span
+                ><text class="branding-pack"
+                  >Everything in The Lump Sum plus: </text
+                ><span></span>
+              </li>
+              <li class="cs-li">
+                <text>Logo Design</text><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Color Palette Creation</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>Typography Selection</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li">
+                <text>$200 fee Per Page After 5</text
+                ><i class="fa-solid fa-circle-check"></i>
+              </li>
+              <li class="cs-li cs-disabled">
+                <text>Unlimited Edits</text><i class="fa-solid fa-ban"></i>
+              </li>
+              <li class="cs-li cs-disabled">
+                <text>Lifetime Updates</text><i class="fa-solid fa-ban"></i>
+              </li>
+            </ul>
+            <a href="" class="cs-button-transparent">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-718" class="bg-color">
+      <div class="cs-container">
+        <picture class="cs-picture">
+          <!-- <source
+            media="(max-width: 600px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Fruuner1-m.jpg
+            " />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Frunner1.jpg
+            " /> -->
+          <img
+            loading="lazy"
+            decoding="async"
+            src="assets/Contact-images/contact-photo.jpg"
+            alt="Web Designer Taking Notes"
+            width="610"
+            height="425"
+            aria-hidden="true" />
+        </picture>
+        <div class="cs-content">
+          <span class="cs-topper">Contact Us</span>
+          <h2 class="cs-title">Get The Website Your Business Deserves</h2>
+          <p class="cs-text">Reach out to us for a free consultation!</p>
+          <!--Form-->
+          <form
+            class="cs-form"
+            id="cs-form-718"
+            name="Contact Form"
+            method="post">
+            <label class="cs-label">
+              Name
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="name-718"
+                name="name"
+                placeholder="Name" />
+            </label>
+            <label class="cs-label cs-email">
+              Email
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="email-718"
+                name="email"
+                placeholder="Email" />
+            </label>
+            <label class="cs-label cs-phone">
+              Phone
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="phone-718"
+                name="phone"
+                placeholder="Phone" />
+            </label>
+            <label class="cs-label">
+              Message
+              <textarea
+                class="cs-input cs-textarea"
+                required
+                name="Message"
+                id="message-718"
+                placeholder="Write message..."></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">
+              Make an Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Footer                      -->
+    <!-- ============================================ -->
+
+    <footer id="footer-1390">
+      <div class="cs-container">
+        <div class="cs-top">
+          <a aria-label="go back to home" class="cs-logo" href="">
+            <img
+              class="cs-logo-img"
+              loading="lazy"
+              decoding="async"
+              src="assets/Boulevard-Web-Design-Logo-v1.png"
+              alt="Boulevard Web Design Logo Black"
+              width="197"
+              height="43" />
+          </a>
+          <ul class="cs-ul">
+            <li class="cs-li">
+              <a href="" class="cs-link">Home</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">About</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Services</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Pricing</a>
+            </li>
+            <li class="cs-li">
+              <a href="" class="cs-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="cs-bottom">
+          <span class="cs-copyright">
+            © Copyright 2024 -
+            <a href="" class="cs-copyright-link">Boulevard Web Design</a>
+          </span>
+          <div class="cs-flex">
+            <a href="" class="cs-copyright-link">Privacy Policy</a>
+            <span class="cs-separater">|</span>
+            <a href="" class="cs-copyright-link">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
