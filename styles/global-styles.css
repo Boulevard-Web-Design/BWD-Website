@@ -22,6 +22,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 10vh;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -97,18 +101,26 @@ body {
   border: 2px solid var(--primary);
 }
 
-.cs-button-solid:hover {
-  background-color: var(--primaryLight);
-  color: #fff;
-  /* border: 2px solid #000; */
-  transform: translate(4px, -4px);
-  box-shadow: #1a1a1a70 -4px 4px 4px;
-  border-color: var(--primaryLight);
-}
+@media (min-width: 768px) {
+  .cs-button-solid:hover {
+    background-color: var(--primaryLight);
+    color: #fff;
+    /* border: 2px solid #000; */
+    transform: translate(4px, -4px);
+    box-shadow: #1a1a1a70 -4px 4px 4px;
+    border-color: var(--primaryLight);
+  }
 
-.cs-button-solid:active {
-  transform: scale(0.95);
-  box-shadow: none;
+  .cs-button-solid:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+
+  a:hover,
+  .cs-link:hover,
+  .cs-li-link:hover {
+    color: white;
+  }
 }
 
 /* 
@@ -199,7 +211,7 @@ body {
   #cs-navigation .cs-logo {
     width: auto;
     max-width: 12.5rem;
-    height: 100%;
+    height: auto;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -562,7 +574,7 @@ body {
   #cs-navigation .cs-logo {
     width: 18.4%;
     max-width: 21.875rem;
-    height: 2rem;
+    height: 5rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 24px;
     padding: 0;
@@ -576,6 +588,9 @@ body {
     height: 100%;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   #cs-navigation .cs-ul-wrapper {
@@ -766,7 +781,7 @@ body {
   }
   #footer-1390 .cs-logo {
     width: 100%;
-    max-width: 13.0625rem;
+    max-width: 15.0625rem;
     height: auto;
     display: block;
   }
