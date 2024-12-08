@@ -51,7 +51,7 @@
     letter-spacing: -1px;
     font-family: "Pacifico", cursive;
     display: block;
-    color: var(--primaryLight);
+    color: var(--primary);
   }
 
   #hero-408 .cs-text {
