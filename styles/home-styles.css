@@ -766,7 +766,7 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
-    scroll-margin-top: 50vh;
+    scroll-margin-top: 10vh;
   }
   #pricing-1384 .cs-container {
     width: 100%;
