@@ -768,7 +768,7 @@ body {
   #hero .hero-blvd {
     font-size: clamp(4rem, 4.4vw, 6rem);
     letter-spacing: -1px;
-    /* font-family: "Pacifico", cursive, sans-serif; */
+    font-family: "Pacifico", cursive, sans-serif;
     display: block;
     color: var(--primary);
   }
@@ -903,7 +903,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    background-image: url("assets/Hero-images/lemai-cafe-guam-mobile.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

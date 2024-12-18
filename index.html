@@ -24,8 +24,8 @@
     <link
       rel="preload"
       as="image"
-      href="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
-
+      type="image/webp"
+      href="assets/Hero-images/lemai-cafe-guam-desktop.webp" />
     <!-- Preloading Google Fonts -->
     <link
       rel="stylesheet"
@@ -37,20 +37,6 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" />
     </noscript>
-    <!-- Inline Style for LCP -->
-    <style>
-      @font-face {
-        font-family: "Pacifico";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url("https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ96A4sijpFu_.woff2")
-          format("woff2");
-      }
-      .hero-blvd {
-        font-family: "Pacifico", cursive;
-      }
-    </style>
 
     <!-- Defer FontAwesome Script -->
     <script
@@ -143,7 +129,8 @@
               src="assets/Hero-images/lemai-cafe-guam-desktop.webp"
               alt="Small Business Image"
               width="1920"
-              height="1286" />
+              height="1286"
+              loading="eager" />
           </picture>
           <div class="stat-box">
             <span class="stat">
