@@ -768,7 +768,7 @@ body {
   #hero .hero-blvd {
     font-size: clamp(4rem, 4.4vw, 6rem);
     letter-spacing: -1px;
-    font-family: "Pacifico", cursive;
+    /* font-family: "Pacifico", cursive, sans-serif; */
     display: block;
     color: var(--primary);
   }
