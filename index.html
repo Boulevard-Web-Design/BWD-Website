@@ -115,15 +115,17 @@
               media="(max-width: 600px)"
               srcset="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
             <source
-              media="(min-width: 601px)"
+              media="(min-width: 601px) and (max-width: 1024px)"
               srcset="assets/Hero-images/lemai-cafe-guam-tablet.webp" />
+            <source
+              media="(min-width: 1025px)"
+              srcset="assets/Hero-images/lemai-cafe-guam-desktop.webp" />
             <img
               decoding="async"
               src="assets/Hero-images/lemai-cafe-guam-desktop.webp"
               alt="Small Business Image"
               width="1920"
-              height="1286"
-              aria-hidden="true" />
+              height="1286" />
           </picture>
           <div class="stat-box">
             <span class="stat">
@@ -476,20 +478,21 @@
           <picture class="picture">
             <source
               media="(max-width: 600px)"
-              srt="
-               assets/Steps-Images/building-website-image-mobile.webp
-              " />
+              srcset="assets/Steps-Images/building-website-image-mobile.webp" />
 
             <source
-              media="(min-width: 601px)"
-              srt="
-                assets/Steps-Images/building-website-image-tablet.webp
+              media="(min-width: 601px) and (max-width: 1024px)"
+              srcset="assets/Steps-Images/building-website-image-tablet.webp" />
+            <source
+              media="(min-width: 1025px)"
+              srcset="
+                assets/Steps-Images/building-website-image-desktop.webp
               " />
             <img
               loading="lazy"
               decoding="async"
               src="assets/Steps-Images/building-website-image-desktop.webp"
-              alt="dermatologist"
+              alt="Building Website Image"
               width="800"
               height="1198" />
           </picture>
@@ -750,12 +753,14 @@
         <picture class="background">
           <source
             media="(max-width: 600px)"
-            srt="
-             assets/CTA-Backgrounds/web-design-mobile.webp
-            " />
+            srcset="assets/CTA-Backgrounds/web-design-mobile.webp" />
           <source
-            media="(min-width: 601px)"
-            srt="assets/CTA-Backgrounds/web-design-tablet.webp" />
+            media="(min-width: 601px) and (max-width: 1024px)"
+            srcset="assets/CTA-Backgrounds/web-design-tablet.webp" />
+          <source
+            media="(min-width: 1025px)"
+            srcset="assets/CTA-Backgrounds/web-design-desktop.webp" />
+
           <img
             aria-hidden="true"
             loading="lazy"
