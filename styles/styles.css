@@ -869,7 +869,7 @@ body {
     background-color: var(--primary);
   }
   #hero .stat-box:nth-of-type(2) {
-    background-color: #3c9354;
+    background-color: #000;
   }
   #hero .stat {
     /* 25px - 61px */
@@ -894,6 +894,7 @@ body {
     left: 0;
     position: absolute;
     z-index: -1;
+    background-color: #2e6f40;
   }
   #hero .background img {
     position: absolute;
@@ -902,6 +903,10 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    background-image: url("assets/Hero-images/lemai-cafe-guam-mobile.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 /* Tablet - 768px */
