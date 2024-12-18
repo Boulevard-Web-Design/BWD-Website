@@ -869,7 +869,7 @@ body {
     background-color: var(--primary);
   }
   #hero .stat-box:nth-of-type(2) {
-    background-color: rgba(34, 149, 33, 0.96);
+    background-color: #3c9354;
   }
   #hero .stat {
     /* 25px - 61px */
@@ -878,6 +878,7 @@ body {
     text-align: left;
     margin: 0;
     display: block;
+    font-weight: 600;
   }
   #hero .desc {
     /* 14px - 20px */
