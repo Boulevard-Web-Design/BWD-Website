@@ -1026,11 +1026,9 @@
   #pricing .item.popular .package,
   #pricing .item.popular .price,
   #pricing .item.popular .duration {
-    color: var(--bodyTextColorWhite);
+    color: #fff;
   }
-  #pricing .item.popular .duration {
-    opacity: 0.8;
-  }
+
   #pricing .item.popular .button-transparent {
     background-color: var(--primary);
     color: #fff;
