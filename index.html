@@ -11,13 +11,13 @@
     <title>Boulevard Web Design</title>
     <meta
       property="og:image"
-      content="https://boulevardwebdesign.com/assets/BWD-Logos/beige-green.svg" />
+      content="https://boulevardwebdesign.com/assets/BWD-Logos/green-beige.svg" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="300" />
     <meta property="og:image:alt" content="Boulevard Web Design Logo" />
     <link
       rel="icon"
-      href="assets/BWD-Logos/Profile-Pic-Main-Green.svg"
+      href="assets/BWD-Logos/Boulevard-web-design-favicon.png"
       type="image/x-icon" />
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="styles/global-styles.css" />
@@ -100,22 +100,18 @@
         </div>
         <div class="stat-group">
           <picture class="background">
-            <!-- <source
+            <source
               media="(max-width: 600px)"
-              srt="
-                https://mg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg
-              " />
+              srcset="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
             <source
               media="(min-width: 601px)"
-              srt="
-                https://mg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg
-              " /> -->
+              srcset="assets/Hero-images/lemai-cafe-guam-tablet.webp" />
             <img
               decoding="async"
-              src="assets/lemai-cafe-guam.jpg"
-              alt="leaves"
-              width="842"
-              height="737"
+              src="assets/Hero-images/lemai-cafe-guam-desktop.webp"
+              alt="Small Business Image"
+              width="1920"
+              height="1286"
               aria-hidden="true" />
           </picture>
           <div class="stat-box">
@@ -184,13 +180,18 @@
         <ul class="card-group">
           <li class="item">
             <picture class="picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  assets/Meet-Team-Images/Carlo-Munoz-Image-mobile.webp
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/Carlo-Munoz-Image.jpg"
-                alt="person"
-                width="305"
-                height="407" />
+                src="assets/Meet-Team-Images/Carlo-Munoz-Image-desktop.webp"
+                alt="Carlo Munoz from Boulevard Web Design"
+                width="500"
+                height="363" />
             </picture>
             <div class="info">
               <span class="name">Carlo Munoz</span>
@@ -199,13 +200,18 @@
           </li>
           <li class="item">
             <picture class="picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  assets/Meet-Team-Images/remy-skrzypek-headshot-mobile.webp
+                " />
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/remy-skrzypek-headshot.jpg"
-                alt="person"
-                width="305"
-                height="407" />
+                src="assets/Meet-Team-Images/remy-skrzypek-headshot-desktop.webp"
+                alt="Carlo Munoz from Boulevard Web Design"
+                width="500"
+                height="363" />
             </picture>
             <div class="info">
               <span class="name">Remy Skrzypek</span>
@@ -240,7 +246,7 @@
             <img
               loading="lazy"
               decoding="async"
-              src="assets/Boulevard-Web-Design-Services-Undraw.svg"
+              src="assets/Services-Images/Boulevard-Web-Design-Services-Undraw.svg"
               alt="car"
               width="510"
               height="193"
@@ -383,7 +389,7 @@
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/Why-Choose-Us-Images/mobile-image.jpg"
+                src="assets/Why-Choose-Us-Images/mobile-image.webp"
                 alt="library"
                 width="413"
                 height="266" />
@@ -401,7 +407,7 @@
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/Why-Choose-Us-Images/google-ipad-photo.jpg"
+                src="assets/Why-Choose-Us-Images/google-ipad-photo.webp"
                 alt="library"
                 width="413"
                 height="266" />
@@ -420,7 +426,7 @@
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/Why-Choose-Us-Images/coding-image.jpg"
+                src="assets/Why-Choose-Us-Images/coding-image.webp"
                 alt="library"
                 width="413"
                 height="266" />
@@ -438,7 +444,7 @@
               <img
                 loading="lazy"
                 decoding="async"
-                src="assets/Why-Choose-Us-Images/open-sign-image.jpg"
+                src="assets/Why-Choose-Us-Images/open-sign-image.webp"
                 alt="library"
                 width="413"
                 height="266"
@@ -457,25 +463,24 @@
       <div class="container">
         <div class="image-group">
           <picture class="picture">
-            <!--Mobile Image-->
-            <!-- <source
+            <source
               media="(max-width: 600px)"
               srt="
-                https://mg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
-              " /> -->
-            <!--Tablet and above Image-->
-            <!-- <source
+               assets/Steps-Images/building-website-image-mobile.webp
+              " />
+
+            <source
               media="(min-width: 601px)"
               srt="
-                https://mg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg
-              " /> -->
+                assets/Steps-Images/building-website-image-tablet.webp
+              " />
             <img
               loading="lazy"
               decoding="async"
-              src="assets/Steps-Images/Building-Website-Image.jpg"
+              src="assets/Steps-Images/building-website-image-desktop.webp"
               alt="dermatologist"
-              width="324"
-              height="467" />
+              width="800"
+              height="1198" />
           </picture>
         </div>
         <div class="wrapper">
@@ -732,19 +737,19 @@
           </a>
         </div>
         <picture class="background">
-          <!-- <source
+          <source
             media="(max-width: 600px)"
             srt="
-              https://mg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg
+             assets/CTA-Backgrounds/web-design-mobile.webp
             " />
           <source
             media="(min-width: 601px)"
-            srt="https://mg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg" /> -->
+            srt="assets/CTA-Backgrounds/web-design-tablet.webp" />
           <img
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="assets/CTA-Backgrounds/web-design-desktop-image.jpg"
+            src="assets/CTA-Backgrounds/web-design-desktop.webp"
             alt="appliance" />
         </picture>
       </div>
