@@ -856,7 +856,7 @@ body {
     z-index: 1;
     opacity: 0;
     transform: translateY(50px);
-    animation: fadeUp 500ms 500ms ease forwards;
+    animation: fadeUp 500ms ease forwards;
   }
 
   @keyframes fadeUp {
