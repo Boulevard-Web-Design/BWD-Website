@@ -854,17 +854,8 @@ body {
     flex-wrap: nowrap;
     position: relative;
     z-index: 1;
-    opacity: 0;
-    transform: translateY(50px);
-    animation: fadeUp 500ms ease forwards;
   }
 
-  @keyframes fadeUp {
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
-  }
   #hero .stat-box {
     width: 50%;
     /* changes at tablet */
