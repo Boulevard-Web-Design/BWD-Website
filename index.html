@@ -25,12 +25,12 @@
       rel="preload"
       as="image"
       type="image/webp"
-      href="assets/Hero-images/lemai-cafe-guam-desktop.webp" />
+      href="assets/BWD-Logos/white-logo-bwd.svg" />
     <link
       rel="preload"
       as="image"
       type="image/webp"
-      href="assets/BWD-Logos/white-logo-bwd.svg" />
+      href="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
 
     <!-- AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -38,16 +38,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Preloading Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
       media="print"
       onload="this.media='all'" />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" />
-    </noscript>
+
+    <!-- Preload Critical Font Files -->
 
     <!-- Defer FontAwesome Script -->
     <script
@@ -126,8 +132,9 @@
             <a href="#services" class="button-transparent">Our Services</a>
           </div>
         </div>
-        <div class="stat-group overflow-hidden">
-          <picture class="background" data-aos="fade-left" data-aos-delay="400">
+
+        <div class="stat-group">
+          <picture class="background">
             <source
               media="(max-width: 600px)"
               srcset="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
@@ -139,10 +146,10 @@
               srcset="assets/Hero-images/lemai-cafe-guam-desktop.webp" />
             <img
               decoding="async"
-              src="assets/Hero-images/lemai-cafe-guam-desktop.webp"
+              src="assets/Hero-images/lemai-cafe-guam-mobile.webp"
               alt="Small Business Image"
-              width="1920"
-              height="1286"
+              width="600"
+              height="402"
               loading="eager" />
           </picture>
           <div class="stat-box">
