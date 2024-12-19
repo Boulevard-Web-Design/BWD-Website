@@ -46,3 +46,9 @@ for (const item of dropDowns) {
   };
   item.addEventListener("click", onClick);
 }
+
+AOS.init({
+  duration: 1000, // Animation duration (in milliseconds)
+  once: true, // Whether animation happens only once
+  easing: "ease", // default easing for AOS animations
+});

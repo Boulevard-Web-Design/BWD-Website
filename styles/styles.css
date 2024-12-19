@@ -101,6 +101,10 @@ body {
   border: 2px solid var(--primary);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .button-solid:hover {
     background-color: var(--primaryLight);
@@ -1430,7 +1434,6 @@ body {
     box-sizing: border-box;
     position: relative;
     z-index: 1;
-    transition: background-color 0.3s;
   }
 
   #why-choose .image {

@@ -26,6 +26,17 @@
       as="image"
       type="image/webp"
       href="assets/Hero-images/lemai-cafe-guam-desktop.webp" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="assets/BWD-Logos/white-logo-bwd.svg" />
+
+    <!-- AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <!-- Preloading Google Fonts -->
     <link
       rel="stylesheet"
@@ -102,19 +113,21 @@
     <section id="hero" class="bg-color">
       <div class="container">
         <div class="content">
-          <h2 class="title">
-            <span class="hero-blvd">Boulevard</span>
+          <h2 class="title" data-aos="fade-right" data-aos-delay="100">
+            <span class="hero-blvd" data-aos="fade-right">Boulevard</span>
 
-            Web Design
+            <span data-aos="fade-right" data-aos-delay="300">Web Design</span>
           </h2>
-          <p class="text">
+          <p class="text" data-aos="fade-right" data-aos-delay="500">
             Building Websites That Drive Results for Small Businesses
           </p>
-          <a href="#cta" class="button-solid">Get A Quote</a>
-          <a href="#services" class="button-transparent">Our Services</a>
+          <div data-aos="fade-in" data-aos-delay="1000">
+            <a href="#cta" class="button-solid">Get A Quote</a>
+            <a href="#services" class="button-transparent">Our Services</a>
+          </div>
         </div>
-        <div class="stat-group">
-          <picture class="background">
+        <div class="stat-group overflow-hidden">
+          <picture class="background" data-aos="fade-left" data-aos-delay="400">
             <source
               media="(max-width: 600px)"
               srcset="assets/Hero-images/lemai-cafe-guam-mobile.webp" />
@@ -155,18 +168,22 @@
     <section id="content" class="bg-color">
       <div class="container">
         <div class="content">
-          <span class="topper">What We Do</span>
-          <h2 class="title">
-            We deliver professional, custom websites that elevate small
-            businesses with the quality web presence they deserve.
-          </h2>
-          <p class="text">
+          <div data-aos="fade-up">
+            <span class="topper">What We Do</span>
+            <h2 class="title">
+              We deliver professional, custom websites that elevate small
+              businesses with the quality web presence they deserve.
+            </h2>
+          </div>
+          <p class="text" data-aos="fade-up">
             Boulevard Web Design was created with one goal in mind: to help
             small businesses thrive online. We know firsthand that having a
             professional website can be a game-changer, and we’re passionate
             about creating sites that deliver value.
           </p>
-          <a href="#cta" class="button-solid">Get Your Website Started</a>
+          <a href="#cta" class="button-solid" data-aos="fade-in"
+            >Get Your Website Started</a
+          >
         </div>
       </div>
     </section>
@@ -178,17 +195,17 @@
     <section id="meet-team" class="bg-color">
       <div class="container">
         <div class="content">
-          <div class="flex">
+          <div class="flex" data-aos="fade-down">
             <span class="topper">About Us</span>
             <h2 class="title">Meet Boulevard Web Design</h2>
           </div>
-          <p>
+          <p data-aos="fade-in">
             Carlo is from Guam, where his family ran a small restaurant and now
             operates a loan provider business. Witnessing the challenges faced
             by small businesses firsthand, he is dedicated to supporting them
             through his own work.
           </p>
-          <p>
+          <p data-aos="fade-in">
             Remy, a New York native, has always had a passion for creativity.
             After majoring in visual arts in high school and graphic design in
             college, she brings fresh, innovative ideas to life in every
@@ -196,7 +213,7 @@
           </p>
         </div>
         <ul class="card-group">
-          <li class="item">
+          <li class="item" data-aos="fade-right">
             <picture class="picture">
               <source
                 media="(max-width: 600px)"
@@ -216,7 +233,7 @@
               <span class="job">Owner and Developer</span>
             </div>
           </li>
-          <li class="item">
+          <li class="item" data-aos="fade-left">
             <picture class="picture">
               <source
                 media="(max-width: 600px)"
@@ -238,7 +255,7 @@
           </li>
         </ul>
       </div>
-      <a href="#cta" class="button-solid">Call Us Today</a>
+      <a href="#cta" class="button-solid" data-aos="fade-in">Call Us Today</a>
     </section>
 
     <!-- ============================================ -->
@@ -247,7 +264,7 @@
 
     <section id="services" class="bg-color">
       <div class="container">
-        <div class="content">
+        <div class="content" data-aos="fade-in" data-aos-delay="400">
           <span class="topper">What We Offer</span>
           <h2 class="title">Websites Catered to Small Businesses</h2>
           <p class="text">
@@ -259,7 +276,7 @@
             landscape.
           </p>
         </div>
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-offset="200">
           <picture class="image">
             <img
               loading="lazy"
@@ -271,7 +288,7 @@
               aria-hidden="true" />
           </picture>
           <ul class="card-group">
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-laptop-code icon"
@@ -287,7 +304,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-copyright icon"
@@ -304,7 +321,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-magnifying-glass icon"
@@ -321,7 +338,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-globe icon"
@@ -337,7 +354,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-screwdriver-wrench icon"
@@ -354,7 +371,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-in" data-aos-delay="600">
               <picture class="picture">
                 <i
                   class="fa-solid fa-headset icon"
@@ -372,7 +389,13 @@
             </li>
           </ul>
         </div>
-        <a href="#cta" class="button-solid">Schedule A Chat</a>
+        <a
+          href="#cta"
+          class="button-solid"
+          data-aos="fade-in"
+          data-aos-delay="600"
+          >Schedule A Chat</a
+        >
       </div>
     </section>
 
@@ -382,7 +405,7 @@
 
     <section id="why-choose" class="bg-color">
       <div class="container">
-        <div class="content">
+        <div class="content" data-aos="fade-down" data-aos-delay="300">
           <span class="topper">Why Choose Us</span>
           <h2 class="title">
             "94% of all mobile and tablet search traffic comes from Google."
@@ -394,80 +417,88 @@
           </p>
         </div>
         <ul class="card-group">
-          <li class="item">
-            <span class="icon"> <i class="fa-solid fa-mobile"></i></span>
-            <h3 class="h3">Mobile First</h3>
-            <p class="item-text">
-              Our mobile-first designs ensure seamless performance and
-              accessibility, providing an exceptional user experience on any
-              device.
-            </p>
+          <li class="item" data-aos="flip-down" data-aos-delay="400">
+            <div>
+              <span class="icon"> <i class="fa-solid fa-mobile"></i></span>
+              <h3 class="h3">Mobile First</h3>
+              <p class="item-text">
+                Our mobile-first designs ensure seamless performance and
+                accessibility, providing an exceptional user experience on any
+                device.
+              </p>
 
-            <picture class="image" aria-hidden="true">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/Why-Choose-Us-Images/mobile-image.webp"
-                alt="Mobile Responsive Image"
-                width="413"
-                height="266" />
-            </picture>
+              <picture class="image" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/Why-Choose-Us-Images/mobile-image.webp"
+                  alt="Mobile Responsive Image"
+                  width="413"
+                  height="266" />
+              </picture>
+            </div>
           </li>
-          <li class="item">
-            <span class="icon"><i class="fa-brands fa-google"></i></span>
-            <h3 class="h3">Google Oriented</h3>
-            <p class="item-text">
-              Our websites are optimized to score 100s on Google PageSpeed
-              Insights, ensuring better rankings on Google.
-            </p>
+          <li class="item" data-aos="flip-down" data-aos-delay="400">
+            <div>
+              <span class="icon"><i class="fa-brands fa-google"></i></span>
+              <h3 class="h3">Google Oriented</h3>
+              <p class="item-text">
+                Our websites are optimized to score 100s on Google PageSpeed
+                Insights, ensuring better rankings on Google.
+              </p>
 
-            <picture class="image" aria-hidden="true">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/Why-Choose-Us-Images/google-ipad-photo.webp"
-                alt="Google Oriented Ipad Search"
-                width="413"
-                height="266" />
-            </picture>
+              <picture class="image" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/Why-Choose-Us-Images/google-ipad-photo.webp"
+                  alt="Google Oriented Ipad Search"
+                  width="413"
+                  height="266" />
+              </picture>
+            </div>
           </li>
-          <li class="item">
-            <span class="icon"><i class="fa-solid fa-code"></i></span>
-            <h3 class="h3">Hand Coded</h3>
-            <p class="item-text">
-              Everything is hand-coded for essential functionality without
-              complexity, ensuring fast load times and easy updates as your
-              business grows.
-            </p>
+          <li class="item" data-aos="flip-down" data-aos-delay="400">
+            <div>
+              <span class="icon"><i class="fa-solid fa-code"></i></span>
+              <h3 class="h3">Hand Coded</h3>
+              <p class="item-text">
+                Everything is hand-coded for essential functionality without
+                complexity, ensuring fast load times and easy updates as your
+                business grows.
+              </p>
 
-            <picture class="image" aria-hidden="true">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/Why-Choose-Us-Images/coding-image.webp"
-                alt="Coding Image"
-                width="413"
-                height="266" />
-            </picture>
+              <picture class="image" aria-hidden="true">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/Why-Choose-Us-Images/coding-image.webp"
+                  alt="Coding Image"
+                  width="413"
+                  height="266" />
+              </picture>
+            </div>
           </li>
-          <li class="item">
-            <span class="icon"><i class="fa-solid fa-shop"></i></span>
-            <h3 class="h3">One Stop Shop</h3>
-            <p class="item-text">
-              We create custom websites with ongoing maintenance and offer
-              expert logo design through our in-house designer.
-            </p>
+          <li class="item" data-aos="flip-down" data-aos-delay="400">
+            <div>
+              <span class="icon"><i class="fa-solid fa-shop"></i></span>
+              <h3 class="h3">One Stop Shop</h3>
+              <p class="item-text">
+                We create custom websites with ongoing maintenance and offer
+                expert logo design through our in-house designer.
+              </p>
 
-            <picture class="image">
-              <img
-                loading="lazy"
-                decoding="async"
-                src="assets/Why-Choose-Us-Images/open-sign-image.webp"
-                alt="Small Business Open Sign Image"
-                width="413"
-                height="266"
-                aria-hidden="true" />
-            </picture>
+              <picture class="image">
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src="assets/Why-Choose-Us-Images/open-sign-image.webp"
+                  alt="Small Business Open Sign Image"
+                  width="413"
+                  height="266"
+                  aria-hidden="true" />
+              </picture>
+            </div>
           </li>
         </ul>
       </div>
@@ -479,7 +510,7 @@
 
     <section id="steps" class="bg-color">
       <div class="container">
-        <div class="image-group">
+        <div class="image-group" data-aos="fade-down" data-aos-delay="300">
           <picture class="picture">
             <source
               media="(max-width: 600px)"
@@ -503,12 +534,12 @@
           </picture>
         </div>
         <div class="wrapper">
-          <div class="content">
+          <div class="content" data-aos="fade-right" data-aos-delay="300">
             <span class="topper">How to get started</span>
             <h2 class="title">Building Your Online Boulevard</h2>
           </div>
           <ul class="card-group">
-            <li class="item">
+            <li class="item" data-aos="fade-right" data-aos-delay="300">
               <span class="number">01</span>
               <div class="flex">
                 <h3 class="h3">Consultation</h3>
@@ -518,7 +549,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-right" data-aos-delay="300">
               <span class="number">02</span>
               <div class="flex">
                 <h3 class="h3">Design</h3>
@@ -529,7 +560,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-right" data-aos-delay="300">
               <span class="number">03</span>
               <div class="flex">
                 <h3 class="h3">Development</h3>
@@ -539,7 +570,7 @@
                 </p>
               </div>
             </li>
-            <li class="item">
+            <li class="item" data-aos="fade-right" data-aos-delay="300">
               <span class="number">04</span>
               <div class="flex">
                 <h3 class="h3">Deployment</h3>
@@ -560,7 +591,7 @@
 
     <section id="pricing" class="bg-color">
       <div class="container">
-        <div class="content">
+        <div class="content" data-aos="fade-up" data-aos-delay="400">
           <span class="topper">Our Pricing</span>
           <h2 class="title">Flexible Pricing Plans for Your Tailored Needs</h2>
           <p class="text">
@@ -570,7 +601,7 @@
           </p>
         </div>
         <ul class="card-group">
-          <li class="item">
+          <li data-aos="fade-up" class="item">
             <div class="flex">
               <span class="package">Lump Sum</span>
               <span class="price"> $3000 </span>
@@ -618,7 +649,7 @@
             </ul>
             <a href="#cta" class="button-transparent">Get Started</a>
           </li>
-          <li class="item popular">
+          <li data-aos="fade-up" class="item popular">
             <div class="flex">
               <span class="package">Monthly</span>
               <span class="price">
@@ -672,7 +703,7 @@
             </ul>
             <a href="#cta" class="button-transparent">Get Started</a>
           </li>
-          <li class="item">
+          <li data-aos="fade-up" class="item">
             <div class="flex">
               <span class="package">Branding Pack</span>
               <span class="price"> $4200</span>
@@ -730,7 +761,7 @@
     <!-- ============================================ -->
 
     <section id="cta" class="bg-color">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-delay="400">
         <div class="left-section">
           <h2 class="title">Get the Website Your Business Deserves</h2>
           <a
