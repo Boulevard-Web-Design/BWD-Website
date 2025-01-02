@@ -1689,8 +1689,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 198px - 214px, 48px and 64px + the 150px negative margin to on the flex. We add that negative marign value to the regular standard gap spacing so there's the proper standard spacing between the content and the card to account for the flex pulling the content closer to it with a negative margin */
-    gap: clamp(12.375rem, 18vw, 13.375rem);
   }
   #pricing .content {
     /* set text align to left if content needs to be left aligned */
@@ -1709,7 +1707,6 @@ body {
   #pricing .card-group {
     width: 100%;
     padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1718,6 +1715,7 @@ body {
     column-gap: clamp(1rem, 2.3vw, 1.25rem);
     /* 166px - 170px */
     row-gap: clamp(10.375rem, 20vw, 10.625rem);
+    margin-top: clamp(12.375rem, 18vw, 13.375rem);
   }
   #pricing .item {
     text-align: center;
@@ -1895,6 +1893,14 @@ body {
     /* this is the section specific override if you choose to pull out the button-transparent and place it in a global stylesheet to resue acorss the entire site */
     margin-top: auto;
   }
+
+  #pricing .bottom-text {
+    text-align: center;
+  }
+
+  #pricing .bottom-text .text {
+    margin-bottom: 12px;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -1911,6 +1917,201 @@ body {
 @media only screen and (min-width: 64rem) {
   #pricing .ul {
     width: 100%;
+  }
+}
+
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq {
+    padding: var(--sectionPadding);
+  }
+  #faq .container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 40px - 48px */
+    gap: clamp(2.5rem, 5vw, 3rem);
+  }
+  #faq .content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #faq .color {
+    color: var(--primary);
+  }
+
+  #faq .title {
+    /* 17 characters wide including spaces */
+    max-width: 17ch;
+  }
+  #faq .text {
+    /* 32px - 48px */
+    margin-bottom: clamp(2rem, 3vw, 3rem);
+  }
+  #faq .button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+
+  #faq .faq-group {
+    max-width: 46.25rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #faq .faq-item {
+    list-style: none;
+    width: 100%;
+    /* prevents border from affecting width and height */
+    box-sizing: border-box;
+    border: 1px solid #f1f1f4;
+    transition: border 0.3s, padding 0.3s, border-color 0.3s;
+  }
+
+  #faq .faq-item.active {
+    padding-bottom: 1rem;
+    border-color: var(--primary);
+  }
+  #faq .faq-item.active .button {
+    color: var(--primary);
+  }
+  #faq .faq-item.active .button:before {
+    transform: translateY(-50%) rotate(180deg);
+    opacity: 0;
+    background-color: var(--primary);
+  }
+  #faq .faq-item.active .button:after {
+    transform: translateY(-50%) rotate(360deg);
+    background-color: var(--primary);
+  }
+  #faq .faq-item.active .item-p {
+    height: auto;
+    margin-top: 0.5rem;
+    opacity: 1;
+  }
+  #faq .button {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1vw, 1.5625rem);
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: var(--headerColor);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #faq .button:before {
+    /* horizontal line */
+    content: "";
+    width: 1rem;
+    height: 0.1875rem;
+    background-color: currentColor;
+    opacity: 1;
+    border-radius: 1px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+    transition: transform 0.5s, opacity 0.3s;
+  }
+  #faq .button:after {
+    /* vertical line */
+    content: "";
+    width: 1rem;
+    height: 0.1875rem;
+    background-color: currentColor;
+    opacity: 1;
+    border-radius: 1px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%) rotate(90deg);
+    transform-origin: center;
+    transition: transform 0.5s;
+  }
+  #faq .button-text {
+    width: 80%;
+    display: block;
+  }
+  #faq .item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    opacity: 0;
+    color: var(--bodyTextColor);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 48rem) {
+  #faq .container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3.25rem;
+  }
+  #faq .content {
+    margin-top: 3.125rem;
+  }
+  #faq .title,
+  #faq .topper,
+  #faq .text {
+    text-align: left;
+    margin-left: 0;
+  }
+  #faq .faq-group {
+    width: clamp(56%, 58vw, 58%);
+    flex: none;
   }
 }
 
@@ -2149,6 +2350,18 @@ body {
   }
   #pricing .button-transparent:hover:before {
     width: 100%;
+  }
+
+  #faq .faq-item:hover {
+    border-color: var(--primary);
+  }
+
+  #faq .button:hover {
+    cursor: pointer;
+  }
+
+  #faq .button-solid:hover {
+    background-color: var(--primaryLight);
   }
   #cta .button-solid:before {
     content: "";

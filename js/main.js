@@ -52,3 +52,21 @@ AOS.init({
   once: true, // Whether animation happens only once
   easing: "ease", // default easing for AOS animations
 });
+
+const faqItems = Array.from(document.querySelectorAll(".faq-item"));
+
+for (const item of faqItems) {
+  const onClick = () => {
+    // Deactivate all other items
+    faqItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active");
+      }
+    });
+
+    // Toggle the clicked item
+    item.classList.toggle("active");
+  };
+
+  item.addEventListener("click", onClick);
+}
