@@ -899,7 +899,7 @@ body {
     left: 0;
     position: absolute;
     z-index: -1;
-    background-color: #2e6f40;
+    background-color: var(--bodyTextColor);
   }
   #hero .background img {
     position: absolute;
@@ -907,10 +907,10 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
 }
 /* Tablet - 768px */
