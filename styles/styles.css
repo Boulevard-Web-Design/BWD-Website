@@ -899,7 +899,7 @@ body {
     left: 0;
     position: absolute;
     z-index: -1;
-    background-color: var(--bodyTextColor);
+    background-color: #e8e4d8;
   }
   #hero .background img {
     position: absolute;
